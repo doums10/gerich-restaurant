@@ -23,7 +23,7 @@ const AboutUs = () => (
 					Know More
 				</button>
 			</div>
-			<div className="app__aboutus-content_knife flax__center">
+			<div className="app__aboutus-content_knife flex__center">
 				<img src={images.knife} alt="about_kinife" />
 			</div>
 
