@@ -69,6 +69,9 @@
 	.app__specialMenu-menu_img {
 		width: 100%;
 	}
+	.app__specialMenu-menu_img img{
+		height: auto;
+	}
 	.app__specialMenu-menu_heading {
 		font-size: 35px;
 		line-height: 48.5px;
