@@ -5,16 +5,16 @@ import { meal } from "../../constants";
 import "./Intro.css";
 
 const Intro = () => {
-  const [playVideo, setPlayVideo] = useState(false);
-  const vidRef = useRef();
-  const handleVideo = () => {
-    setPlayVideo((prevPLayvideo) => (!prevPLayvideo));
-    if (playVideo) {
-      vidRef.current.pause();
-    } else {
-      vidRef.current.play();
-    }
-  }
+	const [playVideo, setPlayVideo] = useState(false);
+	const vidRef = useRef();
+	const handleVideo = () => {
+		setPlayVideo((prevPLayvideo) => !prevPLayvideo);
+		if (playVideo) {
+			vidRef.current.pause();
+		} else {
+			vidRef.current.play();
+		}
+	};
 	return (
 		<div className="app__video">
 			<video
@@ -27,15 +27,17 @@ const Intro = () => {
 			/>
 
 			<div className="app__video-overlay flex__center">
-        <div className="app__video-overlay_circle flex__center"
-        onClick={handleVideo}>
-
-        {playVideo 
-        ? (<BsFillPlayFill  color="#fff" fontSize={30}/>  ) 
-        : <BsPauseFill color="#fff" fontSize={30}/>}
-
-        </div>
-      </div>
+				<div
+					className="app__video-overlay_circle flex__center"
+					onClick={handleVideo}
+				>
+					{playVideo ? (
+						<BsFillPlayFill color="#fff" fontSize={30} />
+					) : (
+						<BsPauseFill color="#fff" fontSize={30} />
+					)}
+				</div>
+			</div>
 		</div>
 	);
 };
