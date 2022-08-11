@@ -1,4 +1,5 @@
 import React from 'react';
+import { imqges, data } from '../../constants';
 
 import './SpecialMenu.css';
 
