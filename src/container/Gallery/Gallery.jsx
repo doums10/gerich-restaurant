@@ -20,7 +20,7 @@ const Gallery = () => {
 	const scroll = (direction) => {
 		const { current } = scrollRef;
 		if (direction === "left") {
-			current.scrollLeft += 300;
+			current.scrollLeft -= 300;
 		} else {
 			current.scrollLeft += 300;
 		}
@@ -47,7 +47,7 @@ const Gallery = () => {
 							key={`gallery_image-${index + 1}`}
 						>
 							<img src={image} alt="gallery image" />
-              <BsInstagram className="gallery__image-icon"/>
+							<BsInstagram className="gallery__image-icon" />
 						</div>
 					))}
 				</div>
