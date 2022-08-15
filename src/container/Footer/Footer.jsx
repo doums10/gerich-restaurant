@@ -41,7 +41,7 @@ const Footer = () => (
 				<p className="p__opensans">07:00am -11:00 pm</p>
 			</div>
 		</div>
-		<div className="footer-copyright">
+		<div className="footer__copyright">
 			<p className="p__opensans">2021 Gerícht. All Rights reserved.</p>
 		</div>
 	</div>
