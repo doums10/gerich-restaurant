@@ -1,5 +1,25 @@
-.app__newsletter{
+.app__newsletter {
 	padding: 2rem 4rem;
 	border: 1px solid var(--color-golden);
-	
+	background: var(--color-black);
+}
+
+.app__newsletter-input {
+	flex-direction: row;
+	margin-top: 3rem;
+}
+.app__newsletter-input input {
+	width: 620px;
+
+	padding: 0.75rem 1rem;
+	border: 1px solid var(--color-golden);
+	background: var(--color-black);
+	font-size: 1rem;
+	color: var(--color-white);
+	font-family: var(--font-base);
+	margin-right: 2rem;
+	border-radius: 5px;
+}
+.app__newsletter-input button {
+	width: max-content;
 }
