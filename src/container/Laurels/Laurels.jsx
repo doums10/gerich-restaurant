@@ -1,5 +1,5 @@
 import React from "react";
-import { imqges, data, images } from "../../constants";
+import { images, data } from "../../constants";
 import { SubHeading } from "../../components";
 
 import "./Laurels.css";
